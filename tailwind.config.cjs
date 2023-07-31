@@ -1,8 +1,15 @@
-/** @type {import("tailwindcss").Config} */
-const config = {
-  content: ["./app/**/*.tsx"],
-  // @ts-ignore
-  presets: [require("@igloo/tailwind-config")],
-};
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
 
-module.exports = config;
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
