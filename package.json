@@ -3,23 +3,36 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
+    "clean": "git clean -xdf .next .turbo node_modules",
+    "dev": "next dev",
+    "lint": "SKIP_ENV_VALIDATION=1 next lint",
+    "lint:fix": "pnpm lint --fix",
     "start": "next start",
-    "lint": "next lint"
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@types/node": "20.4.5",
-    "@types/react": "18.2.17",
-    "@types/react-dom": "18.2.7",
-    "autoprefixer": "10.4.14",
-    "eslint": "8.46.0",
-    "eslint-config-next": "13.4.12",
-    "next": "13.4.12",
-    "postcss": "8.4.27",
+    "@clerk/nextjs": "^4.21.1",
+    "@tanstack/react-query": "^4.24.10",
+    "@trpc/client": "^10.14.0",
+    "@trpc/next": "^10.14.0",
+    "@trpc/react-query": "^10.14.0",
+    "@trpc/server": "^10.14.0",
+    "next": "^13.4.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.1.6"
+    "superjson": "1.9.1",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.34.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "tsx": "^3.12.3",
+    "typescript": "^4.9.5"
   }
 }
