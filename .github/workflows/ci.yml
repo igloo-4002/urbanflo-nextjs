@@ -35,7 +35,7 @@ jobs:
       - name: Save files
         uses: actions/upload-artifact@v3
         with:
-          name: urbanflo-vite
+          name: urbanflo-nextjs
           path: |
             LICENSE
             README.md
