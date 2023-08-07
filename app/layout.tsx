@@ -1,11 +1,12 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren } from 'react';
 
-import "./globals.css";
-import { Metadata } from "next";
+import { Metadata } from 'next';
+
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "UrbanFlo",
-  description: "A modern traffic planner",
+  title: 'UrbanFlo',
+  description: 'A modern traffic planner',
 };
 
 export default function RootLayout({

@@ -1,18 +1,19 @@
-"use client";
+'use client';
 
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { useState } from "react";
+import { useState } from 'react';
 
-import UrbanFloBlack from "../../public/UrbanFloBlack.png";
+import { Dialog } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+
+import UrbanFloBlack from '../../public/UrbanFloBlack.png';
 
 /**
  * List of navigation buttons in the menu
  */
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Contact us", href: "#" },
+  { name: 'Product', href: '#' },
+  { name: 'Features', href: '#' },
+  { name: 'Contact us', href: '#' },
 ];
 
 const UrbanFloHeaderLogo = () => {
@@ -68,7 +69,7 @@ const Header = () => {
         </div>
         {/* Menu buttons for wide screen. For the menu list see navigation above */}
         <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
+          {navigation.map(item => (
             <a
               key={item.name}
               href={item.href}
@@ -107,7 +108,7 @@ const Header = () => {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                {navigation.map((item) => (
+                {navigation.map(item => (
                   <a
                     key={item.name}
                     href={item.href}
