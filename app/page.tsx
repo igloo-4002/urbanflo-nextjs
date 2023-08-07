@@ -2,32 +2,32 @@ import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
-} from "@heroicons/react/20/solid";
-import Header from "app/components/Header";
+} from '@heroicons/react/20/solid';
+import Header from 'app/components/Header';
 
-import CanvasImg from "../public/canvas.png";
-import TrafficImg from "../public/traffic.jpeg";
+import CanvasImg from '../public/canvas.png';
+import TrafficImg from '../public/traffic.jpeg';
 
 // TODO: a better way to do this based on whether it's local or on vercel
-const linkToCanvasPage = "https://dev.canvas.urbanflo.app";
+const linkToCanvasPage = 'https://dev.canvas.urbanflo.app';
 
 const features = [
   {
-    name: "Canvas:",
+    name: 'Canvas:',
     description:
-      "Create a network and run your simulation! You can change the properties of roads, inflows and intersections and add shapes and text to label wherever you need.",
+      'Create a network and run your simulation! You can change the properties of roads, inflows and intersections and add shapes and text to label wherever you need.',
     icon: CloudArrowUpIcon,
   },
   {
-    name: "Projects:",
+    name: 'Projects:',
     description:
-      "Save, import and export files in an organised matter with our project file system",
+      'Save, import and export files in an organised matter with our project file system',
     icon: LockClosedIcon,
   },
   {
-    name: "Account:",
+    name: 'Account:',
     description:
-      "Create an account to save your models to. Who knows when you will need to refer back to them!",
+      'Create an account to save your models to. Who knows when you will need to refer back to them!',
     icon: ServerIcon,
   },
 ];
@@ -49,14 +49,14 @@ export default function Example() {
               className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#fb7e02] to-[#F7B326] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
               style={{
                 clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                  'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
               }}
             />
           </div>
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                Urban planners are loving our site.{" "}
+                Urban planners are loving our site.{' '}
                 <a href="#" className="font-semibold text-orange-600">
                   <span className="absolute inset-0" aria-hidden="true" />
                   Read more <span aria-hidden="true">&rarr;</span>
@@ -95,7 +95,7 @@ export default function Example() {
               className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#fb7e02] to-[#F7B326] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
               style={{
                 clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+                  'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
               }}
             />
           </div>
@@ -119,7 +119,7 @@ export default function Example() {
                 </p>
                 {/* Feature list */}
                 <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                  {features.map((feature) => (
+                  {features.map(feature => (
                     <div key={feature.name} className="relative pl-9">
                       <dt className="inline font-semibold text-gray-900">
                         <feature.icon
@@ -127,7 +127,7 @@ export default function Example() {
                           aria-hidden="true"
                         />
                         {feature.name}
-                      </dt>{" "}
+                      </dt>{' '}
                       <dd className="inline">{feature.description}</dd>
                     </div>
                   ))}
